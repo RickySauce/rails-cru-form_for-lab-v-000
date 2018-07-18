@@ -12,9 +12,9 @@ class ArtistsController < ApplicationController
     @artist = Artist.create()
   end
 
-  private 
+  private
 
   def artist_params(*args)
-    params.require(:artists).permit(*args)
+    params.require(:artist).permit(*args)
   end
 end

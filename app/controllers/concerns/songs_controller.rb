@@ -1,23 +1,23 @@
 class SongsController < ApplicationController
 
-  def show 
-  end 
+  def show
+  end
 
-  def new 
-  end 
+  def new
+  end
 
-  def create 
-  end 
+  def create
+  end
 
-  def edit 
-  end  
+  def edit
+  end
 
-  def update 
-  end 
+  def update
+  end
 
-  private 
+  private
 
-  def song_params(*args) 
+  def song_params(*args)
     params.require(:song).permit(*args)
   end
 end

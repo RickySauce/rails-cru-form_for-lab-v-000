@@ -9,6 +9,8 @@ class SongsController < ApplicationController
   end
 
   def create
+    @song = Song.new(post_params(:name))
+    binding.pry
   end
 
   def edit
